@@ -47,7 +47,7 @@ from keras.layers import Dense
 from keras.optimizers import Adam
 
 #Defining ANN model with 3 layers
-classifier = Sequential([Dense(16,input_dim=7, activation = 'relu'),Dense(32,activation='relu'),Dense(16,activation='relu'),Dense(5,activation='softmax')])
+classifier = Sequential([Dense(16,input_dim=8, activation = 'relu'),Dense(32,activation='relu'),Dense(16,activation='relu'),Dense(5,activation='softmax')])
 
 # Compiling Neural Network
 classifier.compile(Adam(lr=0.001), loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
